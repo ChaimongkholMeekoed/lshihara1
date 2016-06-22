@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var iehimig: UIImageView!
+    
+    
+    @IBOutlet weak var unsertextfi: UITextField!
+    
+    var stranswer:String = ""
+    var intIndex:Int = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +29,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func unserbutton(sender: AnyObject) {
+        
+        stranswer = String(unsertextfi.text)
+        print("unser= \(stranswer)")
+        
+        intIndex += 1
+        print("intIndex ==>\(intIndex)")
+        
+    }//answerbutton
 
-}
+}//Mian 
 
